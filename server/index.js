@@ -28,18 +28,12 @@ const data = {
 
 const getPlantByFieldId = (id) => {
   let result = null;
-  console.log(id);
 
   data.fields.forEach((field) => {
-    console.log(field);
-
     if (field.fieldId == id) {
-      console.log('test');
-      console.log(field);
       result = field.cultivatedPlant;
     }
   });
-  console.log(result);
   return result;
 };
 
