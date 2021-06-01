@@ -1,0 +1,23 @@
+#container {
+  background-color: #b3e4dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+  height: auto;
+  width: 50%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 50px;
+}

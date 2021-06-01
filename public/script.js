@@ -13,9 +13,11 @@ window.addEventListener('load', () => {
     input.value = '';
   });
 
-  ws.onopen = () => (document.querySelector('#result').innerHTML = 'connected');
+  ws.onopen = () =>
+    (document.querySelector('#connection').innerHTML = 'Connected');
   ws.onclose = () =>
-    (document.querySelector('#result').innerHTML = 'disconnected');
-  ws.onmessage = (response) =>
-    (document.querySelector('#result').innerHTML = response.data);
+    (document.querySelector('#connection').innerHTML = 'Disconnected');
+  ws.onmessage = (response) => {
+    resultField.innerHTML = `${response.data} grows on this field`;
+  };
 });
